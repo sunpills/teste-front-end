@@ -1,0 +1,28 @@
+@import 'base/reset.scss';
+@import 'base/base.scss';
+@import 'components/header.components/indexHeader.scss';
+@import 'components/categoria.components/indexCategorias.scss';
+@import 'components/marcasParcerias.components/indexMarcasParcerias.scss';
+@import 'components/socialBlog.components/indexSocialBlog.scss';
+@import 'components/form.components/formIndex.scss';
+@import 'components/footer.components/indexFooterComponents.scss';
+
+body {
+    overflow-x: hidden;
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fff;
+
+    &-track {
+        background: #fcde8c;
+    }
+
+    &-thumb {
+        background: #FBB900;
+        border-radius: 20px;
+    }
+
+}

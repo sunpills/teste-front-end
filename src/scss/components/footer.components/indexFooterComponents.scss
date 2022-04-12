@@ -1,0 +1,22 @@
+@import 'sobreNosComponents.scss';
+@import 'contatoComponents.scss';
+@import 'formaPagamentComponents.scss';
+@import 'copyComponents.scss';
+
+.footer {
+    @include mobile {
+        display: block;
+    }
+
+    @include tablet {
+        display: block;
+    }
+
+    display: flex;
+    background-color: #FBB900;
+    margin-top: 87px;
+
+    &__cover {
+        width: 100%;
+    }
+}

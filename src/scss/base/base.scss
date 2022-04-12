@@ -1,0 +1,58 @@
+@mixin poppinsLight {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+@mixin poppinsRegular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+@mixin poppinsMedium {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+@mixin poppinsSemiBold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+@mixin poppinsBold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+@mixin poppinsExtraBold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+@mixin poppinsBlack {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+@mixin LatoRegular {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+@mixin LatoBlack {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+@mixin mobile {
+    @media (min-width: 280px)and(max-width: 415px) {
+        @content;
+    }
+
+}
+
+@mixin tablet {
+    @media (min-width: 540px)and(max-width: 912px) {
+        @content;
+    }
+
+}

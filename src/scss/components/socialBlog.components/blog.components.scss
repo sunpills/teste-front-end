@@ -1,0 +1,135 @@
+.blog {
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+
+    &__title {
+        margin-top: 124px;
+        text-align: center;
+        @include poppinsBold;
+        font-size: 32px;
+        margin-right: 825px;
+        color: #4D4D4D;
+        margin-bottom: 25px;
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+
+    }
+
+    &__cover {
+        margin-left: 20px;
+        height: 536px;
+
+
+    }
+
+    &__img {
+        width: 277px;
+        border-radius: 20px 20px 0px 0px;
+        position: relative;
+
+
+    }
+
+    &__info {
+        width: 277px;
+        background: #FEF6E7;
+        border-radius: 0px 0px 20px 20px;
+        height: 259px;
+        position: absolute;
+        top: 183px;
+
+
+
+
+    }
+
+    &__subTitle {
+        @include poppinsBold;
+        padding: 24px;
+        font-size: 20px;
+        color: #4D4D4D;
+        line-height: 1.3em;
+
+
+
+    }
+
+    &__description {
+        @include poppinsRegular;
+        padding: 10px 20px;
+        color: #9F9F9F;
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    &__linkCover {
+        margin-top: 30px;
+        margin-left: 24px;
+        margin-bottom: 24px;
+
+    }
+
+    &__link {
+        @include poppinsBlack;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: #FBB900;
+        font-size: 16px;
+        padding: 12px 24px;
+        color: #FFF;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+
+    }
+
+    &__link:hover {
+        background: #F0D075;
+    }
+
+    .splide__arrow--next {
+        right: -1em;
+    }
+
+    .splide__arrow--prev {
+        left: 0em;
+    }
+
+    .splide__arrow:disabled {
+        opacity: 1;
+    }
+
+    .splide__arrow {
+        background: #FFF;
+        box-shadow: 0px 5px 5px #f0d075;
+        top: 35%;
+
+
+    }
+
+    .splide__pagination__page.is-active {
+        border: 2px solid #9F9F9F;
+    }
+
+    .splide__pagination {
+        top: 28em;
+    }
+
+}

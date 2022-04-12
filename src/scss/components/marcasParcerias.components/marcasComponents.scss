@@ -1,0 +1,133 @@
+.marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @include mobile {
+        display: block;
+        margin-top: 2em;
+    }
+
+    @include tablet {
+        display: block;
+        margin-top: 2em;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+        margin-bottom: 62px;
+
+        @include mobile {
+            margin-top: 21em;
+            margin-bottom: 0;
+            display: block
+        }
+
+        @include tablet {
+            margin-top: 21em;
+            margin-bottom: 0;
+            display: block
+        }
+    }
+
+    &__title {
+        @include poppinsBold;
+        font-size: 32px;
+        margin-right: 770px;
+        color: #4D4D4D;
+
+        @include mobile {
+            margin-right: 0;
+            font-size: 20px;
+        }
+
+        @include tablet {
+            margin-right: 0;
+            font-size: 30px;
+        }
+    }
+
+    &__link {
+        @include poppinsBold;
+        color: #FBB900;
+        font-size: 20px;
+        right: 56px;
+
+        @include mobile {
+            display: block;
+            float: right;
+            font-size: 10px;
+        }
+
+        @include tablet {
+            display: block;
+            float: right;
+            font-size: 20px;
+        }
+    }
+
+    &__cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #E5E5E5;
+        width: 178px;
+        height: 178px;
+        border-radius: 20px;
+        margin-left: 10px;
+        box-shadow: 0px 8px 16px rgba(179, 134, 0, 0.12);
+
+        @include mobile {
+            justify-content: space-between;
+            height: 150px;
+            width: 100%;
+            border-radius: 10px;
+            margin-left: 5px;
+            position: relative;
+
+        }
+
+    }
+
+
+    &__img {
+        width: 50%;
+
+        @include mobile {
+            width: 100%;
+            position: absolute;
+
+        }
+
+    }
+
+    .splide__arrow--next {
+        right: 0em;
+    }
+
+    .splide__arrow--prev {
+        left: 0em;
+    }
+
+    .splide__arrow {
+        background: #FFF;
+        box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+    }
+
+    .splide__pagination__page {
+        display: none;
+    }
+
+}

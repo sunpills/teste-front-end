@@ -1,0 +1,176 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+        display: block;
+    }
+
+    @include tablet {
+        display: block;
+    }
+
+    &__img {
+        width: 281px;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    &__cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 772px;
+        height: 346px;
+        background: #FEF6E7;
+        border-radius: 20px;
+        justify-content: space-around;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        width: 343px;
+        justify-content: center;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &__CoverInputName {
+        position: relative;
+    }
+
+    &__name {
+        position: relative;
+        width: 100%;
+        border: none;
+        @include poppinsMedium;
+        color: #9F9F9F;
+        height: 48px;
+        border-radius: 10px;
+
+        @include mobile {
+            padding: 0;
+        }
+
+        @include tablet {
+            padding: 0;
+        }
+    }
+
+    &__name::placeholder {
+        color: #9F9F9F;
+        padding-left: 72px;
+    }
+
+    &__imgName {
+        position: absolute;
+        top: 7px;
+        left: 20px;
+    }
+
+    &__CoverInputEmail {
+        position: relative;
+    }
+
+    &__email {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        @include poppinsMedium;
+        color: #9F9F9F;
+        border: none;
+        height: 48px;
+        border-radius: 10px;
+
+        @include mobile {
+            padding: 0;
+        }
+
+        @include tablet {
+            padding: 0;
+        }
+    }
+
+    &__email::placeholder {
+        color: #9F9F9F;
+        padding-left: 72px;
+    }
+
+    &__imgEmail {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 28px;
+    }
+
+    &__title {
+        @include poppinsBold;
+        font-size: 24px;
+        padding-left: 25%;
+        padding-right: 25%;
+        color: #4D4D4D;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 24px;
+        line-height: 36px;
+
+        @include mobile {
+            font-size: 20px;
+            padding-left: 0;
+            padding-right: 0;
+            line-height: 26px;
+        }
+
+        @include tablet {
+            padding-left: 0;
+            padding-right: 0;
+            line-height: 26px;
+        }
+    }
+
+    &__bnt {
+        @include poppinsBlack;
+        width: 145px;
+        height: 40px;
+        border-radius: 10px;
+        background: #FBB900;
+        color: #FFF;
+        border: none;
+        margin-left: 90px;
+        margin-top: 32px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        margin-bottom: 32px;
+
+        @include mobile {
+            margin-left: 70px;
+        }
+
+        @include tablet {
+            margin-left: 70px;
+        }
+    }
+
+    &__bnt:hover {
+        background: #F0D075;
+    }
+
+}

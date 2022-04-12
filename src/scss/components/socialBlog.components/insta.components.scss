@@ -1,0 +1,79 @@
+.insta {
+   @include mobile {
+      display: block;
+   }
+
+   @include tablet {
+      display: block;
+   }
+
+   &__cover {
+      display: flex;
+      justify-content: space-between;
+
+
+
+   }
+
+   &__title {
+      color: #4D4D4D;
+      @include poppinsBold;
+      font-size: 32px;
+      margin-top: 88px;
+      margin-bottom: 32px;
+      margin-left: 56px;
+
+      @include mobile {
+         display: block;
+         margin-left: 0;
+         font-size: 20px;
+      }
+
+      @include tablet {
+         display: block;
+         margin-left: 0;
+         font-size: 30px;
+      }
+
+   }
+
+   &__link {
+      @include poppinsBold;
+      color: #FBB900;
+      font-size: 20px;
+      margin-top: 88px;
+      margin-right: 56px;
+
+      @include mobile {
+         display: block;
+         font-size: 10px;
+         margin-right: 0;
+      }
+
+      @include tablet {
+         display: block;
+         font-size: 20px;
+         margin-right: 0;
+      }
+   }
+
+   &__img {
+      width: 100%;
+
+      @include mobile {
+         width: 100%;
+      }
+   }
+
+   .splide__pagination__page.is-active {
+      display: none;
+   }
+
+   .splide__arrow {
+      display: none;
+   }
+
+   .splide__pagination__page {
+      display: none;
+   }
+}

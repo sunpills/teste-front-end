@@ -1,0 +1,307 @@
+.parceiros {
+    display: flex;
+    justify-content: center;
+    margin-top: 88px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__carousel {
+        position: relative;
+        margin-right: 10px;
+
+    }
+
+    &__gradient {
+        position: absolute;
+        width: 100%;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 350px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%);
+        opacity: 0.6;
+        z-index: 1;
+
+        @include mobile {
+            width: 100%;
+            height: 240px;
+        }
+
+        @include tablet {
+            width: 100%;
+            height: 350px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 350px;
+
+        @include mobile {
+            width: 100%;
+            height: 240px;
+        }
+
+        @include tablet {
+            width: 100%;
+            height: 350px;
+        }
+
+    }
+
+    &__info {
+        position: absolute;
+        top: 114px;
+        width: 58%;
+        margin-left: 40px;
+        z-index: 1;
+
+        @include mobile {
+            top: 58px;
+        }
+
+        @include tablet {
+            top: 121px;
+        }
+
+    }
+
+    &__title {
+        @include poppinsBold;
+        font-size: 40px;
+        color: #FFF;
+        margin-bottom: 8px;
+
+        @include mobile {
+            font-size: 20px;
+        }
+
+        @include tablet {
+            font-size: 30px;
+        }
+    }
+
+    &__description {
+        @include poppinsRegular;
+        font-size: 16px;
+        color: #FFF;
+        margin-bottom: 32px;
+        padding-right: 37%;
+
+        @include mobile {
+            padding-right: 35%;
+            font-size: 10px;
+        }
+
+        @include tablet {
+            padding-right: 35%;
+            font-size: 16px;
+        }
+    }
+
+    &__confira {
+        text-align: center;
+        width: 30%;
+        text-decoration: none;
+        @include poppinsBlack;
+        background-color: #FBB900;
+        color: #FFF;
+        font-size: 16px;
+        padding: 12px 24px;
+        transition: 0.5s;
+        border-radius: 10px;
+        text-transform: uppercase;
+
+        @include mobile {
+            font-size: 10px;
+            padding: 5px 10px
+        }
+
+        @include tablet {
+            font-size: 13px;
+            padding: 10px 15px
+        }
+    }
+
+    &__confira:hover {
+        background: #F0D075;
+    }
+
+    .splide__arrow {
+        display: none;
+    }
+
+    .splide__pagination {
+        top: 23em;
+    }
+
+    .splide__pagination__page {
+        background: #9F9F9F;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .splide__pagination__page.is-active {
+        border: 1px solid #9F9F9F;
+    }
+}
+
+.assinatura {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+    @include mobile {
+        display: block;
+        margin-left: 0;
+        margin-top: 70px;
+    }
+
+    @include tablet {
+        display: block;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    &__cover {
+        display: flex;
+        width: 630px;
+        border-radius: 20px;
+        background: #FEF6E7;
+        height: 350px;
+
+        @include mobile {
+            width: 100%;
+            height: 270px;
+        }
+
+        @include tablet {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        width: 63%;
+        flex-direction: column;
+
+        @include mobile {
+            margin-left: 10px
+        }
+
+        @include tablet {
+            margin-left: 10px
+        }
+
+
+    }
+
+    &__title {
+        @include poppinsBold;
+        font-size: 32px;
+        padding-left: 56px;
+        padding-right: 5px;
+        color: #4D4D4D;
+        line-height: 1.3em;
+
+        @include mobile {
+            font-size: 15px;
+            padding-left: 0;
+        }
+
+        @include tablet {
+            font-size: 20px;
+
+        }
+    }
+
+    &__description {
+        @include poppinsRegular;
+        font-size: 16px;
+        color: #9F9F9F;
+        padding-left: 56px;
+        padding-right: 20px;
+        margin-top: 16px;
+        line-height: 1.3em;
+
+        @include mobile {
+            padding-left: 0;
+            font-size: 10px;
+        }
+
+        @include tablet {
+
+            font-size: 15px;
+        }
+    }
+
+    &__link {
+        text-align: center;
+        width: 30%;
+        text-decoration: none;
+        @include poppinsBlack;
+        background-color: #FBB900;
+        color: #FFF;
+        font-size: 16px;
+        padding: 16px 24px;
+        transition: 0.5s;
+        margin-left: 56px;
+        margin-top: 32px;
+        border-radius: 10px;
+        text-transform: uppercase;
+
+        @include mobile {
+            margin-left: 0;
+            font-size: 10px;
+            width: 35%;
+        }
+
+        @include tablet {
+
+            font-size: 15px;
+            width: 35%;
+        }
+    }
+
+    &__link:hover {
+        background: #F0D075;
+    }
+
+    &__img {
+        position: absolute;
+        top: -40px;
+        width: 240px;
+        height: 388px;
+
+        @include mobile {
+            top: 35px;
+            width: 100px;
+            height: 231px;
+            right: 2px;
+        }
+
+        @include tablet {
+            width: 238px;
+            height: 342px;
+            right: 2px;
+        }
+
+    }
+}

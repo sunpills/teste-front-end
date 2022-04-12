@@ -1,0 +1,100 @@
+.formaPagamento {
+    display: flex;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 40px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.card {
+    margin-top: 31px;
+    margin-left: 56px;
+    width: 57%;
+
+    @include mobile {
+        width: 91%;
+        margin-left: 10px;
+        border-bottom: 1px solid #FFF;
+    }
+
+    @include tablet {
+        width: 91%;
+        margin-left: 10px;
+        border-bottom: 1px solid #FFF;
+    }
+
+    &__title {
+        @include poppinsBold;
+        font-size: 20px;
+        color: #FFF;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 65%;
+
+        li {
+            margin-right: 15px;
+
+
+            img {
+                width: 66px;
+
+                @include mobile {
+                    width: 40px;
+                }
+
+                @include tablet {
+                    width: 40px;
+                }
+
+            }
+        }
+    }
+
+}
+
+.security {
+    margin-top: 31px;
+
+    @include mobile {
+        margin-left: 10px;
+    }
+
+    @include tablet {
+        margin-left: 10px;
+    }
+
+    &__title {
+        @include poppinsBold;
+        font-size: 20px;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+
+        @include mobile {
+            width: 80px;
+            height: 80px;
+        }
+
+        @include tablet {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+}

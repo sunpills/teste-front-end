@@ -1,33 +1,21 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End Jr
+# Teste FrontEnd Jr. - Econverse
 
-### Vem ser #Econverse!
+Projeto realizado para o teste de Front-End Jr. da Econverse, a proposta era desenvolver um e-commerce para a loja O Cãoselheiro em html e mostrar a vitrine de produtos consumindo as informações de um .json, do qual foi feito utilizando ReactJS. O layout da página está responsivo tanto para mobile quanto tablet e o pré-processador de CSS utilizado foi o SASS/SCSS. 
 
-Segue abaixo as instruções para a execução do teste.
+Para mim foi um grande desafio, mas que me deixou bem motivada e empenhada todos os dias, vale ressaltar também que adorei fazer pois AMO cachorrinhos :heart:
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br e pedro@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+## Tecnologias usadas:
 
-## Especificações Técnicas
-- Desenvolver a pagina em html conforme o layout nesse [Link](https://www.figma.com/file/nnZhHOmXmwxBGcaJhTaXdl/Teste-para-Desenvolvedores?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [Vitrine](https://app.econverse.com.br/teste-front-end/junior/caoselheiro/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/caoselheiro/lista-produtos/produtos.json) com uso de jQuery, React.js, Vue.js, ou Angular.
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/caoselheiro/lista-produtos/produtos.json) conforme o produto que clicar.
-- Desenvolver os Htmls semânticos.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar Framworks como Bootstrap, Foundation, ou afins.
+- Javascript
+- ReactJS
+- SASS/SCSS
 
-## Pontos Extras
-- Utilizar Automatizadores de Tarefas como: (Grunt, Gulp ou Outros).
-- Utilizar Boas práticas de SEO.
-- Organização do Projeto.
+## Instruções de como rodar o projeto localmente:
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Identação do código
-- Uso de componentização
-- Alcance dos objetivos propostos
+- Instalação dos pacotes: `$ npm install` 
+- Iniciar o projeto: `$ npm start`
+- Deploy: `$ npm run build`
 
-**Boa sorte! ;)**
+## Preview do teste
+
+![](https://i.ibb.co/0XKHq7r/preview-teste.jpg)

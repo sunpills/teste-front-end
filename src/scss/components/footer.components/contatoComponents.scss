@@ -1,0 +1,159 @@
+.contato {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    &__coverSocio {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 30px;
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__assinatura {
+        @include poppinsBold;
+        font-size: 20px;
+        color: #FFF;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__parceiros {
+        @include poppinsBold;
+        font-size: 20px;
+        color: #FFF;
+        text-transform: uppercase;
+        text-decoration: none;
+
+    }
+
+}
+
+.institucional {
+    margin-left: 72px;
+    line-height: 30px;
+
+    @include mobile {
+        margin-left: 10px;
+        border-bottom: 1px solid #FFF;
+        padding-bottom: 10px;
+    }
+
+    @include tablet {
+        margin-left: 10px;
+        border-bottom: 1px solid #FFF;
+        padding-bottom: 10px;
+    }
+
+    &__title {
+        @include poppinsBold;
+        font-size: 20px;
+        color: #FFF;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        li {
+            a {
+                @include poppinsMedium;
+                font-size: 14px;
+                color: #FFF;
+                text-decoration: none;
+                line-height: 21px;
+                margin-top: 20px;
+
+                @include mobile {
+                    font-size: 10px;
+                }
+
+                @include tablet {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+.atendimento {
+    margin-left: 60px;
+
+    @include mobile {
+        margin-left: 10px;
+        border-bottom: 1px solid #FFF;
+        padding-bottom: 10px;
+    }
+
+    @include tablet {
+        margin-left: 10px;
+        border-bottom: 1px solid #FFF;
+        padding-bottom: 10px;
+    }
+
+    &__title {
+        @include poppinsBold;
+        font-size: 20px;
+        color: #FFF;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    &__tel {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 14.9px;
+            height: 14.12px;
+            padding-right: 6px;
+
+        }
+    }
+
+    &__list {
+        color: #FFF;
+        font-size: 14px;
+
+        @include mobile {
+            font-size: 10px;
+        }
+
+        @include tablet {
+            font-size: 10px;
+        }
+
+        li {
+
+            line-height: 30px;
+
+            p {
+                @include poppinsMedium;
+
+            }
+
+            a {
+                @include poppinsMedium;
+                text-decoration: none;
+                color: #FFF;
+            }
+
+
+        }
+    }
+}

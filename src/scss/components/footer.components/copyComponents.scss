@@ -1,0 +1,74 @@
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @include mobile {
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-left: 58px;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-left: 58px;
+    }
+
+    &__cartification {
+        @include poppinsRegular;
+        color: #FFF;
+        width: 317px;
+        font-size: 12px;
+        margin-left: 56px;
+        margin-right: 136px;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
+
+        p {
+            padding-right: 115px;
+            line-height: 18px;
+
+            @include mobile {
+                padding-right: 0;
+            }
+
+            @include tablet {
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__econverse {
+        width: 106px;
+        margin-right: 32px;
+
+        @include mobile {
+            width: 73px;
+        }
+
+        @include tablet {
+            width: 73px;
+        }
+    }
+
+    &__vtex {
+        width: 106px;
+
+        @include mobile {
+            width: 73px;
+        }
+
+        @include tablet {
+            width: 73px;
+        }
+    }
+}
